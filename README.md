@@ -75,7 +75,7 @@ g++ -std=c++17 -O2 src/spell_checker.cpp -o spell_checker
 
 **Example output:**
 ```
-Dictionary loaded: 9981 words (11.7 KB)
+Dictionary loaded: 9981 words 
 
 Line 2: "gret" not found in dictionary
 Line 3: "mountan" not found in dictionary
@@ -88,11 +88,16 @@ Note: false positives possible at ~1% rate
 
 The dictionary file should have one word per line. A sample `dictionary.txt` with 10,000 common English words is included.
 
-## Running Tests
+## Running Tests and Spell Checker
 
 ```bash
 g++ -std=c++17 -O2 tests/test_bloom.cpp -o tests
 ./tests
+```
+
+```bash
+g++ -std=c++17 -O2 src/spell_checker.cpp -o spell_checker
+./spell_checker dictionary.txt input.txt
 ```
 
 ## Project Structure

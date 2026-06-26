@@ -1,3 +1,7 @@
+Future Changes : 
+1) Implementation in Go
+2) Concurrency support  
+
 # Bloom Filter & Spell Checker
 
 A C++ implementation of a Bloom Filter and Counting Bloom Filter, applied to build a dictionary-backed spell checker.
